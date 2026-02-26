@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="dam.code.FormController"
+      spacing="10"
+      alignment="CENTER"
+      styleClass="container">
+
+    <Label text="Registro de Usuario" styleClass="title"/>
+
+    <TextField fx:id="txtNombre" promptText="Nombre" />
+    <TextField fx:id="txtEmail" promptText="Email" />
+    <PasswordField fx:id="txtPassword" promptText="Contraseña"/>
+
+    <Button text="Registrar" onAction="#registrarUsuario" styleClass="btn-primary"/>
+
+    <Label fx:id="lblMensaje"/>
+
+</VBox>

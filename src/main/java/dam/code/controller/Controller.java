@@ -1,6 +1,5 @@
 package dam.code.controller;
 
-
 import dam.code.model.Entrada;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

@@ -1,0 +1,26 @@
+.container {
+    -fx-padding: 30;
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #34495e);
+}
+
+.title {
+    -fx-font-size: 22px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.text-field, .password-field {
+    -fx-pref-width: 250px;
+    -fx-background-radius: 8;
+}
+
+.btn-primary {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-padding: 8 20;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #2980b9;
+}
