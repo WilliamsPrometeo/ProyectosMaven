@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@styles.css"
+            fx:controller="dam.code.DashboardController"
+            styleClass="container">
+    <top>
+        <Label text="Bienvenido al Dashboard"
+               styleClass="title"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <Label  fx:id="lblBienvenida"
+                    text="Bienvenido"
+                    styleClass="message"/>
+
+            <Button fx:id="btnCerrar"
+                    text="Cerrar Sesión"
+                    onAction="#cerrarSesion"
+                    styleClass="btn-danger"/>
+        </VBox>
+    </center>
+
+</BorderPane>

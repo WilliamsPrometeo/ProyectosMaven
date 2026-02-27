@@ -12,7 +12,6 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/form.fxml"));
 
         Scene scene = new Scene(fxmlLoader.load());
-        scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
 
         stage.setTitle("Formulario JavaFX");
         stage.setScene(scene);

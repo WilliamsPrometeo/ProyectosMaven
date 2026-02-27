@@ -4,6 +4,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <VBox xmlns:fx="http://javafx.com/fxml"
+      stylesheets="@styles.css"
       fx:controller="dam.code.FormController"
       spacing="10"
       alignment="CENTER"
