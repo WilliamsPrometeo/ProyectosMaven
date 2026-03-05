@@ -13,6 +13,7 @@
         <module>StylesJavaFX</module>
         <module>Libreria</module>
         <module>JavaFX</module>
+        <module>LibreriaMVC</module>
     </modules>
 
     <properties>

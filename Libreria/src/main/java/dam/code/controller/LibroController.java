@@ -1,6 +1,7 @@
 package dam.code.controller;
 
 import dam.code.model.Libro;
+import dam.code.persistence.JsonManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -34,14 +35,9 @@ public class LibroController {
         colPrecio.setCellValueFactory(cellData -> cellData.getValue().precioProperty().asObject());
         colStock.setCellValueFactory(cellData -> cellData.getValue().stockProperty().asObject());
 
+        listaLibros.addAll(JsonManager.cargar());
         tablaLibros.setItems(listaLibros);
 
-        //Datos iniciales
-        listaLibros.addAll(
-                new Libro("El Quijote", "Cervantes", 19.99, 5),
-                new Libro("1984", "Orwell", 14.50, 8),
-                new Libro("Clean Code", "Robert C. Martin", 35.00, 3)
-        );
     }
 
     @FXML
@@ -59,6 +55,8 @@ public class LibroController {
 
             Libro nuevo = new Libro(titulo, autor, precio, stock);
             listaLibros.add(nuevo);
+
+            JsonManager.guardar(listaLibros);
 
             limpiarCampos();
 
@@ -89,7 +87,7 @@ public class LibroController {
 
         if (seleccionado != null) {
             listaLibros.remove(seleccionado);
+            JsonManager.guardar(listaLibros);
         }
-
     }
 }

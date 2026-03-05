@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10"
+      alignment="CENTER"
+      stylesheets="/styles/styles.css"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="dam.code.controller.LibroController">
+
+    <Label text="Gestión de Librería" styleClass="title"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="txtTitulo" promptText="Título"/>
+        <TextField fx:id="txtAutor" promptText="Autor"/>
+        <TextField fx:id="txtPrecio" promptText="Precio"/>
+        <TextField fx:id="txtStock" promptText="Stock"/>
+        <Button text="Añadir Libro" onAction="#addLibro"/>
+    </HBox>
+
+    <TableView fx:id="tablaLibros" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colTitulo" text="Título"/>
+            <TableColumn fx:id="colAutor" text="Autor"/>
+            <TableColumn fx:id="colPrecio" text="Precio"/>
+            <TableColumn fx:id="colStock" text="Stock"/>
+        </columns>
+    </TableView>
+
+    <Button text="Eliminar Libro" onAction="#eliminarLibro" styleClass="button-danger"/>
+
+</VBox>
