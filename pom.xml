@@ -15,6 +15,7 @@
         <module>JavaFX</module>
         <module>LibreriaMVC</module>
         <module>LibreriaMap</module>
+        <module>cinesa</module>
     </modules>
 
     <properties>
