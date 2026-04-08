@@ -16,6 +16,7 @@
         <module>LibreriaMVC</module>
         <module>LibreriaMap</module>
         <module>cinesa</module>
+        <module>JDBC</module>
     </modules>
 
     <properties>
