@@ -17,6 +17,7 @@
         <module>LibreriaMap</module>
         <module>cinesa</module>
         <module>JDBC</module>
+        <module>cinesaJDBC</module>
     </modules>
 
     <properties>

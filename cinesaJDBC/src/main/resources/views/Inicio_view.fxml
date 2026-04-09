@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      stylesheets="/styles/styles.css"
+      fx:controller="dam.code.controller.InicioController"
+      spacing="10"
+      alignment="CENTER"
+      styleClass="container">
+
+    <Label text="Inicio de Sesión" styleClass="title"/>
+
+    <TextField fx:id="txtDni" promptText="DNI" />
+    <PasswordField fx:id="txtPassword" promptText="Contraseña"/>
+
+    <VBox spacing="10" alignment="CENTER">
+        <Button text="Incio sesión" onAction="#iniciarSesion" styleClass="btn-primary"/>
+        <Button text="Registrarse" onAction="#registro" styleClass="btn-secondary"/>
+    </VBox>
+
+    <Label fx:id="lblMensaje"/>
+
+</VBox>
