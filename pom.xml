@@ -18,6 +18,7 @@
         <module>cinesa</module>
         <module>JDBC</module>
         <module>cinesaJDBC</module>
+        <module>ampliacion</module>
     </modules>
 
     <properties>
