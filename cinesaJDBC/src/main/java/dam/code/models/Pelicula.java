@@ -8,12 +8,14 @@ public class Pelicula {
     private String director;
     private int duracion;
     private LocalDate fecha_publicacion;
+    private int visualizaciones;
 
     public Pelicula(String titulo, String director, int duracion, LocalDate fecha_publicacion) {
         this.titulo = titulo;
         this.director = director;
         this.duracion = duracion;
         this.fecha_publicacion = fecha_publicacion;
+        this.visualizaciones = 0;
     }
 
     public Pelicula(int id, String titulo, String director, int duracion, LocalDate fecha_publicacion) {
@@ -22,6 +24,7 @@ public class Pelicula {
         this.director = director;
         this.duracion = duracion;
         this.fecha_publicacion = fecha_publicacion;
+        this.visualizaciones = 0;
     }
 
     public int getId() {
@@ -62,5 +65,13 @@ public class Pelicula {
 
     public void setFecha_publicacion(LocalDate fecha_publicacion) {
         this.fecha_publicacion = fecha_publicacion;
+    }
+
+    public int getVisualizaciones() {
+        return visualizaciones;
+    }
+
+    public void setVisualizaciones(int visualizaciones) {
+        this.visualizaciones = visualizaciones;
     }
 }
