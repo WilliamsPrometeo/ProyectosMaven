@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      stylesheets="/styles/styles.css"
+      fx:controller="dam.code.controller.VideojuegoController"
+      spacing="10"
+      alignment="CENTER"
+      styleClass="container">
+
+    <TextField fx:id="txtNombre" promptText="Nombre"/>
+    <TextField fx:id="txtEdad" promptText="Edad"/>
+
+    <Button text="Enviar" onAction="#sendName"/>
+
+    <Label fx:id="lblMensaje" text="Texto de ejemplo"/>
+
+
+</VBox>
