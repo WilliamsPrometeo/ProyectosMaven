@@ -10,12 +10,16 @@
       alignment="CENTER"
       styleClass="container">
 
-    <TextField fx:id="txtNombre" promptText="Nombre"/>
-    <TextField fx:id="txtEdad" promptText="Edad"/>
+    <TextField fx:id="txtTitulo" promptText="Titulo"/>
+    <TextField fx:id="txtPegi" promptText="PEGI"/>
 
-    <Button text="Enviar" onAction="#sendName"/>
+    <Button text="Enviar" onAction="#sendData"/>
 
-    <Label fx:id="lblMensaje" text="Texto de ejemplo"/>
-
+    <TableView fx:id="tablaVideojuego" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colTitulo" text="Titulo"/>
+            <TableColumn fx:id="colPegi" text="PEGI"/>
+        </columns>
+    </TableView>
 
 </VBox>
