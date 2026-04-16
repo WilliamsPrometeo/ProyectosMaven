@@ -25,7 +25,7 @@
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>
-                        dam.code.ViedojuegoMain
+                        dam.code.AppMain
                     </mainClass>
                 </configuration>
             </plugin>

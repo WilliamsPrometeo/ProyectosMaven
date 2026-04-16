@@ -51,12 +51,13 @@ public class UsuarioDAOImpl implements UsuarioDAO {
                         rs.getString("nombre"),
                         rs.getString("email")
                 );
+            } else {
+                throw new UsuarioException("Credenciales incorrectas");
             }
 
         } catch (SQLException e) {
             throw new UsuarioException(e.getMessage());
         }
 
-        return null;
     }
 }
