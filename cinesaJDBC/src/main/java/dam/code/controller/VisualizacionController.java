@@ -55,6 +55,8 @@ public class VisualizacionController {
         colFecha.setCellValueFactory(cellData -> new SimpleObjectProperty<>(cellData.getValue().getFecha_publicacion()));
         colVisualizaciones.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getVisualizaciones()).asObject());
 
+        setVisualizacion();
+
     }
     private void prefWidthColumns() {
         tablaVisualizaciones.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY_ALL_COLUMNS);
@@ -138,7 +140,7 @@ public class VisualizacionController {
 
                     Stage stage = (Stage) tablaVisualizaciones.getScene().getWindow();
                     stage.setResizable(false);
-                    stage.setWidth(800);
+                    stage.setWidth(400);
                     stage.setHeight(600);
                     stage.setScene(new Scene(root));
                 } catch (Exception e) {

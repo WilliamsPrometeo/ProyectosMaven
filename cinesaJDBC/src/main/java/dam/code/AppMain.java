@@ -26,7 +26,7 @@ public class AppMain extends Application {
         stage.setScene(new Scene(root));
         stage.setTitle("Cinesa");
         stage.setResizable(false);
-        stage.setWidth(800);
+        stage.setWidth(400);
         stage.setHeight(600);
         stage.show();
     }

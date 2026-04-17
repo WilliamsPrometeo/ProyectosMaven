@@ -15,6 +15,7 @@
     <TextField fx:id="txtDni" promptText="DNI" />
     <TextField fx:id="txtNombre" promptText="Nombre" />
     <TextField fx:id="txtEmail" promptText="Email" />
+    <ComboBox fx:id="comboRol" prefWidth="Infinity" prefHeight="25.0"/>
     <PasswordField fx:id="txtPassword" promptText="Contraseña"/>
     <PasswordField fx:id="txtPasswordRepit" promptText="Repetir contraseña"/>
 

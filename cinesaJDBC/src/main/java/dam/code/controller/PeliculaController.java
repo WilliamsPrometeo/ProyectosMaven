@@ -180,7 +180,7 @@ public class PeliculaController {
 
                     Stage stage = (Stage) txtTitulo.getScene().getWindow();
                     stage.setResizable(false);
-                    stage.setWidth(800);
+                    stage.setWidth(400);
                     stage.setHeight(600);
                     stage.setScene(new Scene(root));
                 } catch (Exception e) {
